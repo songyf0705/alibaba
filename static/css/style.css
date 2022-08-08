@@ -1,0 +1,142 @@
+/**
+       *时间:2018/11/14
+       *作者:songyf
+       *项目:规则升级服务
+       */
+
+/*基础样式*/
+html, body, #app, *{margin: 0 ;padding: 0;}
+html, body, #app, .wrap{height: 100%;}
+a{text-decoration:none;color:#333333;}
+body,html,#app{height: 100%; font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,blockquote,th,td,input,button,span{font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
+.fl{float: left;}
+.fr{float: right;}
+.tl{text-align: left;}
+.tr{text-align: right;}
+.clear{clear: both;}
+.center{text-align: center}
+.line-height{line-height: 30px;}
+.mt20{margin-top: 20px;}
+.va{vertical-align: middle}
+.pointer{cursor: pointer}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {width: 5px;height: 16px;background-color: #F5F5F5;}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);border-radius: 10px;background-color: #F5F5F5;}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {border-radius: 10px;box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);background-color: rgba(0, 0, 0, 0.1);}
+
+
+/*通用样式*/
+.btnBg{background-color: #597ef7;}
+.el-dialog__title{font-size: 14px;}
+.input-width{width: 250px;}
+.el-dialog__header {padding: 10px 20px;border-bottom: 1px solid rgba(0,0,0,.09);}
+.el-dialog__headerbtn {top: 10px;}
+.el-dialog__body{padding: 20px;}
+.el-table th {background-color: #fafafa;}
+.el-pager li{min-width: 30px;}
+.dialog-footer{margin-top: 20px;}
+.el-dialog{overflow: hidden;}
+.el-pagination{font-weight: 200;}
+.el-pager li{background-color: #fff!important; border: 1px solid #d9d9d9; font-family: Arial;}
+.el-pager li.active{border: 1px solid #409EFF;color: #606266!important;}
+.el-pager li.active+li {border: 1px solid #d9d9d9;}
+.el-dialog__footer{padding: 0 15px 15px}
+
+  /*分页样式*/
+.table-foot .totalRecord-box {display: inline-block;padding: 15px 10px 10px 0;color: #666;font-size: 14px;}
+.table-foot .el-pagination {float: right;padding: 15px 0 0;}
+
+  /*页面样式*/
+.wrap{width: 100%; height: 100%; overflow: auto; background: #f0f2f5;}
+.main{width: 1100px;  overflow: visible;  min-width: 1100px; min-height: calc(100% - 206px); margin: 15px auto; background-color: #fff;}
+.content{width: 100%; height: 100%; padding: 0 15px; overflow: hidden; box-sizing: border-box}
+.siderBarBox{height: 100%; }
+
+
+
+  /*login*/
+.loginBg{width: 100%; height: 100%; background: url(../images/loginBg.svg)  no-repeat center center; background-size: cover;overflow: auto;}
+.loginBox{width: 450px;  box-sizing: border-box; border-radius: 8px; box-shadow: 0 10px 29px 0 rgba(161,161,161,0.20); padding: 40px 25px;  background-color: #fff; position: absolute; left: 50%; top: 50%; margin: -272px 0 0 0; box-sizing: border-box;}
+.loginTitleBox{margin-bottom: 40px;}
+.loginTitle{text-align: center;}
+.loginTitle>p{text-align: center; font-size: 25px; font-weight: 200;}
+.loginForm .item-input{position: relative;}
+.loginForm .loginBtn{width: 100%; height: 50px;}
+.loginForm .el-form-item__content{line-height: 0; margin-left: 0!important;}
+.loginForm .input-icon{position: absolute; top: 15px; left: 20px; z-index: 1000;}
+.loginForm .el-form-item__error{margin: 10px 0 0 50px;}
+.loginForm input{height: 50px; padding: 0 50px;font-size: 16px;}
+.loginForm .el-checkbox{margin-left: 5px;}
+.loginForm .el-form-item{margin-bottom:40px;}
+  /*header*/
+.header{height: 60px;background-color: rgb(84, 92, 100);}
+.header .navItem{display: inline-block;}
+.header .el-menu-demo{min-width: 1100px; width: 1100px; margin: 0 auto;}
+.header .el-menu-item{height: 60px; line-height: 60px;}
+.header .is-active{border-bottom: 2px solid rgb(255, 208, 75);}
+.header .logo {height: 60px; line-height: 60px; color: #ffffff; margin-right: 50px;}
+.header .logo>img{vertical-align: middle;}
+.header .user {height: 60px; line-height: 60px; margin-right:20px; color: #ffffff;vertical-align: middle; cursor: pointer;}
+.header .user .el-dropdown{color: #ffffff;}
+  /*main*/
+
+.pageTitleBox{min-width: 1100px; margin: 0 auto;}
+.pageTitleBox .el-card{border: 0;}
+.pageTitleBox .el-card__body{padding: 0; }
+.pageTitleBox .clearfix{width: 1100px;min-width: 1100px; margin: 0 auto;}
+.pageTitle{margin-right: 30px;}
+
+.pageMain{padding: 20px;}
+.treeBox .el-button--mini.is-circle{padding: 1px;}
+.treeBox .el-button+.el-button{margin: 0;}
+.treeBox .fileTitle{color: #409EFF;}
+.action-buttons{visibility: hidden}
+.el-tree-node__content:hover .action-buttons{visibility: visible;}
+.breadcrumb-list span:hover{cursor: pointer;color: #409EFF;}
+
+/*侧边栏*/
+.siderBar{height:100%; border: 1px solid #eeeeee; padding: 15px 0 15px 15px; box-sizing: border-box }
+.siderBar .el-menu.el-menu--horizontal{border: 0;}
+.siderBar .navItem{margin-bottom: 5px;}
+.siderBar .is-active{background-color: #E7F0FF;;border-right: 4px solid rgb(255,208,75); color: #000!important;}
+
+.leftBox{width: 180px; float: left; }
+.rightBox{width: 920px; height: 100%; overflow: auto; padding: 15px; float: left;box-sizing: border-box}
+.table-box{margin: 15px 0;padding-bottom: 15px; }
+.table-title{margin-bottom: 15px;}
+
+/*ruleResult*/
+.rule-result-head .msg-box {font-size:14px; background-color: #E7F0FF;padding: 15px 15px 0 15px; color: #777A83;border-radius: 3px;}
+.rule-result-head .msg-box .msg-value{color: #000;}
+.rule-result-head .msg-box .el-col{margin-bottom: 15px;}
+
+.rules-card{font-size: 14px;}
+.rules-card .el-card{margin-top: 20px;}
+.rules-card .rules-name{width: 75px; vertical-align: sub;display:inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;;  color: #F56C6C;}
+.rules-card .el-card__body{padding: 0;}
+.rules-card .msg{text-align: center; line-height: 30px;padding: 10px 20px 10px 20px;}
+.rules-card .msg span{font-size: 16px}
+
+.rules-card .tools{background: #fafafa; }
+.rules-card .tools .el-col{margin: 10px 0;}
+.rules-card .tools .el-col:not(:last-child){border-right: 1px solid #e8e8e8; }
+.rules-card .tools .el-col .el-button{padding: 0;}
+
+/*organ*/
+.organ-box{font-size: 14px;}
+.organ-card .el-dropdown-menu__item{padding: 0;}
+.el-dropdown-menu__item{padding: 0;}
+.el-dropdown-menu__item span{display: inline-block;padding: 0 20px;width: 100%;box-sizing: border-box;}
+.details .el-card .el-card__body{height: 100px;background-color: #fff; overflow-y: auto;}
+.organ-details .value{font-size: 14px;}
+.organ-details .value{color: #409EFF}
+
+/*classify*/
+.treeBox{padding: 15px;}
+.treeBox .el-tree{padding: 15px 0;}
+.classify-item{height: 118px; overflow: hidden;}
+
